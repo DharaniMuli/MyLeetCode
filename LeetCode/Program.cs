@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 
 namespace LeetCode
 {
@@ -15,11 +16,25 @@ namespace LeetCode
             // End: Palindrome
 
             //Start: RomanToInteger
-            String romannumber = Console.ReadLine();
-            RomanToInteger rtoi = new RomanToInteger();
-            rtoi.romanToInteger(romannumber);
+
+            //String romannumber = Console.ReadLine();
+            //RomanToInteger rtoi = new RomanToInteger();
+            //rtoi.romanToInteger(romannumber);
 
             //End: RomanToInteger
+
+
+            //Start: Longest Common Prefix
+
+            string[] myarray = { "Flower", "", "Flowering" };
+
+            //for(int i=0; i<= myarray.length;)
+
+            //myarray = Convert.To Console.ReadLine();
+            LargestCommonPrefixCode lcp = new LargestCommonPrefixCode();
+            Console.WriteLine(lcp.findlargestCommonPrefix(myarray));
+            Console.ReadLine();
+            //End: Longest Common Prefix
         }
     }
 }
