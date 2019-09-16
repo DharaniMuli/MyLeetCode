@@ -67,13 +67,21 @@ namespace LeetCode
             //End: Needle in haystack
 
             //Start: Search Insert Position
-            int[] nums = { 1,3,5,7 };
-            int target = 0;
-            searchInsertPosition sip = new searchInsertPosition();
-            int sipresult=sip.SearchInsert(nums, target);
-            Console.WriteLine(sipresult);
+            //int[] nums = { 1,3,5,7 };
+            //int target = 0;
+            //searchInsertPosition sip = new searchInsertPosition();
+            //int sipresult=sip.SearchInsert(nums, target);
+            //Console.WriteLine(sipresult);
             //End: Search Insert Position
 
+
+            //Start: Count and Say
+
+            int n = 4;
+            Count_and_Say cas = new Count_and_Say();
+            cas.CountAndSay(n);
+
+            //End: Count and Say
         }
     }
 }
