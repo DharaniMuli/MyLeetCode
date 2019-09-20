@@ -6,40 +6,50 @@ namespace LeetCode
 {
     class Count_and_Say
     {
-        public void CountAndSay(int n)
+        public string CountAndSay(int n)
         {
-
-            int resultstring = 1;
-            string myString = resultstring.ToString();
+          
+            int result = 1;
+            string finalResult="";
+            int myResultStringLength = 1;
             int charCount = 1;
 
-            for (int i = 0; i < n; i++)
+            if (n == 1)
             {
-                try
-                {
-                    for (int j = 0; j < myString.Length; j++)
-                    {
-                        if (myString[j] == myString[j + 1])
-                        {
-                            charCount++;
-                            i = i + charCount;
-                            myString = charCount.ToString() + myString[j];
-                        }
-                        else if (myString[j] != myString[j + 1])
-                        {
-                            myString = charCount.ToString() + myString[j];
-
-                        }
-
-                    }
-                }
-                catch
-                {
-                    Console.WriteLine(myString);
-                }
-
+                return "1";
             }
-                Console.WriteLine(myString);
+            else
+            {
+                for (int i = 0; i < n; i++)
+                {
+                    string myResultString = result.ToString();
+                    
+                    for (int j = 0; j < myResultStringLength; j++)
+                    {
+                        try
+                        {
+                            while(myResultString[j] != myResultString[j + 1])
+                            {
+                                charCount++;
+                            }
+                            myResultString= charCount.ToString() + myResultString[j];
+                            finalResult = myResultString;
+                        }
+
+
+                        catch
+                        {
+                            myResultString = charCount.ToString() + myResultString[j];
+                            finalResult = myResultString;
+                        }
+                        charCount = 1;
+                    }
+                    myResultStringLength = myResultString.Length; 
+                }
+                return finalResult;
+            }
+           
+            
           
            
 

@@ -78,9 +78,10 @@ namespace LeetCode
             //Start: Count and Say
 
             int n = 4;
+            String Count_and_Say_Result;
             Count_and_Say cas = new Count_and_Say();
-            cas.CountAndSay(n);
-
+            Count_and_Say_Result=cas.CountAndSay(n);
+            Console.WriteLine(Count_and_Say_Result);
             //End: Count and Say
         }
     }
