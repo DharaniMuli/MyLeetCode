@@ -77,12 +77,26 @@ namespace LeetCode
 
             //Start: Count and Say
 
-            int n = 4;
-            String Count_and_Say_Result;
-            Count_and_Say cas = new Count_and_Say();
-            Count_and_Say_Result=cas.CountAndSay(n);
-            Console.WriteLine(Count_and_Say_Result);
+            //int n = 4;
+            //String Count_and_Say_Result;
+            //Count_and_Say cas = new Count_and_Say();
+            //Count_and_Say_Result=cas.CountAndSay(n);
+            //Console.WriteLine(Count_and_Say_Result);
             //End: Count and Say
+
+            //Start: StariCase problem
+            int[] cost= {0,1,2,2};
+            StairCase sc = new StairCase();
+           int cheapCost= sc.minCostClimbingStairs(cost);
+            Console.WriteLine(cheapCost);
+
+            // End: StairCase
+
+            // Start: Pascal Triangle
+            int n = 4;
+            Pascal.triangle(4);
+            
+            // End: Pascal Triangle
         }
     }
 }
